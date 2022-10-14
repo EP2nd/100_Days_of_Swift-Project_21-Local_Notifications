@@ -51,6 +51,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         /* var dateComponents = DateComponents()
         dateComponents.hour = 12
         dateComponents.minute = 15
+         
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true) */
         
         // Challenge 2:
