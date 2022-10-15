@@ -75,7 +75,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        // pull out the buried userInfo dictionary
+        // Pull out the buried userInfo dictionary.
         let userInfo = response.notification.request.content.userInfo
         
         if let customData = userInfo["customData"] as? String {
@@ -83,7 +83,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
             
             switch response.actionIdentifier {
             case UNNotificationDefaultActionIdentifier:
-                // the user swiped to unlock
+                // The user swiped to unlock.
                 // Challenge 1:
                 let ac = UIAlertController(title: "Swipe", message: "You just swiped your finger to open the app.", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "OK", style: .default))
@@ -91,7 +91,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
                 print("Default identifier")
                 
             case "show":
-                // the user tapped our "show more info..." button
+                // The user tapped our "Tell me more..." button.
                 // Challenge 1:
                 let ac = UIAlertController(title: "Button", message: "You just discovered a hidden option button!", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "OK", style: .default))
@@ -110,7 +110,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
                 break
             }
         }
-        // you must call the completion handler when you're done
+        // We must call the completion handler when we're done.
         completionHandler()
     }
 }
