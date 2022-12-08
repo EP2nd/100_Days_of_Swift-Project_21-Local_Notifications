@@ -60,9 +60,9 @@
 				B8D2F49728F75350004ECF9A /* SceneDelegate.swift */,
 				B8D2F49928F75350004ECF9A /* ViewController.swift */,
 				B8D2F49B28F75350004ECF9A /* Main.storyboard */,
-				B8D2F49E28F75353004ECF9A /* Assets.xcassets */,
 				B8D2F4A028F75353004ECF9A /* LaunchScreen.storyboard */,
 				B8D2F4A328F75353004ECF9A /* Info.plist */,
+				B8D2F49E28F75353004ECF9A /* Assets.xcassets */,
 			);
 			path = Project21;
 			sourceTree = "<group>";
